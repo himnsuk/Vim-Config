@@ -29,7 +29,8 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
-Plugin 'nanotech/jellybeans.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -38,6 +39,11 @@ Plugin 'rking/ag.vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'slim-template/vim-slim'
+Plugin 'morhetz/gruvbox'
+Plugin 'chriskempson/tomorrow-theme'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tomtom/tcomment_vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -89,4 +95,5 @@ augroup end
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "Set color
-color jellybeans
+set background=dark
+colorscheme solarized
