@@ -38,6 +38,15 @@ Plugin 'rking/ag.vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'slim-template/vim-slim'
+Plugin 'mileszs/ack.vim'
+Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'bonsaiben/bootstrap-snippets'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -89,4 +98,13 @@ augroup end
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "Set color
-color jellybeans
+"color jellybeans
+colorscheme desert
+
+"Set tabstop and indentation
+set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+
+hi TabLineFill ctermfg=LightGreen ctermbg=Blue
+hi TabLine ctermfg=Blue ctermbg=LightBlue
+hi TabLineSel ctermfg=Red ctermbg=LightBlue
+hi Title ctermfg=LightBlue ctermbg=Magenta
