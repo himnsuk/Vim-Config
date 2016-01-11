@@ -44,6 +44,9 @@ Plugin 'chriskempson/tomorrow-theme'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
+Plugin 'Yggdroot/indentLine'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -59,6 +62,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 "Set line nummber
 :set number
@@ -96,4 +100,5 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "Set color
 set background=dark
-colorscheme solarized
+colorscheme desert256
+set mouse=""
