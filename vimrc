@@ -51,6 +51,7 @@ Plugin 'mrtazz/simplenote.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'easymotion/vim-easymotion'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -118,18 +119,20 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " for linux and windows users (using the control key)
-map <C-S-]> gt
-map <C-S-[> gT
-map <C-1> 1gt
-map <C-2> 2gt
-map <C-3> 3gt
-map <C-4> 4gt
-map <C-5> 5gt
-map <C-6> 6gt
-map <C-7> 7gt
-map <C-8> 8gt
-map <C-9> 9gt
-map <C-0> :tablast<CR>
+" map <C-S-]> gt
+" map <C-S-[> gT
+" map <C-1> 1gt
+" map <C-2> 2gt
+" map <C-3> 3gt
+" map <C-4> 4gt
+" map <C-5> 5gt
+" map <C-6> 6gt
+" map <C-7> 7gt
+" map <C-8> 8gt
+" map <C-9> 9gt
+" map <C-0> :tablast<CR>
+map L gt
+map H gT
 "Adding date and time while adding notes
 nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
