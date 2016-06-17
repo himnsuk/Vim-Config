@@ -9,3 +9,8 @@ git push -u origin master
 
 git remote add origin https://github.com/himnsuk/Vim-Config.git
 git push -u origin master
+
+
+Add Branch for password less access
+
+git remote set-url origin git@github.com:himnsuk/JavaFiles
