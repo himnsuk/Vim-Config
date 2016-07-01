@@ -1,0 +1,1 @@
+/home/himanshu/dotfiles/vim/ftplugin/gitcommit.vim

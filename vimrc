@@ -41,7 +41,7 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'Yggdroot/indentLine'
 Plugin 'mrtazz/simplenote.vim'
@@ -49,6 +49,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'vimwiki/vimwiki'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -135,3 +138,10 @@ nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
 "Autor reload changes from disk
 set autoread
+
+"Moving through buffer easily
+
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
