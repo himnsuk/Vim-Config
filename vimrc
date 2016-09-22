@@ -38,9 +38,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
-"Plugin 'slim-template/vim-slim'
 Plugin 'morhetz/gruvbox'
-"Plugin 'chriskempson/tomorrow-theme'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tomtom/tcomment_vim'
@@ -49,6 +47,17 @@ Plugin 'bling/vim-airline'
 Plugin 'Yggdroot/indentLine'
 Plugin 'mrtazz/simplenote.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+Plugin 'vimwiki'
+Plugin 'chriseppstein/vim-haml'
+Plugin 'mileszs/ack.vim'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'herringtondarkholme/yats.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -102,7 +111,10 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "Set color
 set background=dark
-colorscheme desert256
+" colorscheme desert256
+" colorscheme brogrammer
+syntax enable
+colorscheme monokai
 set mouse=""
 let g:SimplenoteUsername = "himnsuk@gmail.com"
 let g:SimplenotePassword = "kesar1991"
@@ -114,21 +126,24 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-" for linux and windows users (using the control key)
-map <C-S-]> gt
-map <C-S-[> gT
-map <C-1> 1gt
-map <C-2> 2gt
-map <C-3> 3gt
-map <C-4> 4gt
-map <C-5> 5gt
-map <C-6> 6gt
-map <C-7> 7gt
-map <C-8> 8gt
-map <C-9> 9gt
-map <C-0> :tablast<CR>
+"for linux and windows users (using the control key)
+map L gt
+map H gT
 "Adding date and time while adding notes
 nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
 "Autor reload changes from disk
 set autoread
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+let g:vimrubocop_config = '/path/to/rubocop.yml'
+" Multiple cursor selection code
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+" Map start key separately from next key
+let g:multi_cursor_start_key='<F6>'
+let g:multi_cursor_start_key='<C-n>'
+let g:multi_cursor_start_word_key='g<C-n>'
