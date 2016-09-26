@@ -58,6 +58,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'herringtondarkholme/yats.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'bling/vim-bufferline'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'marijnh/tern_for_vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -147,3 +151,21 @@ let g:multi_cursor_quit_key='<Esc>'
 let g:multi_cursor_start_key='<F6>'
 let g:multi_cursor_start_key='<C-n>'
 let g:multi_cursor_start_word_key='g<C-n>'
+" javascript commands
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+set foldmethod=syntax
+let g:javascript_conceal_function       = "ƒ"
+let g:javascript_conceal_null           = "ø"
+let g:javascript_conceal_this           = "@"
+let g:javascript_conceal_return         = "⇚"
+let g:javascript_conceal_undefined      = "¿"
+let g:javascript_conceal_NaN            = "ℕ"
+let g:javascript_conceal_prototype      = "¶"
+let g:javascript_conceal_static         = "•"
+let g:javascript_conceal_super          = "Ω"
+let g:javascript_conceal_arrow_function = "⇒"
+" Buffer switching
+nnoremap gn :bn<cr>
+nnoremap gp :bp<cr>
+nnoremap gd :bd<cr>
