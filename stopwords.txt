@@ -569,3 +569,10 @@ yourself
 yourselves
 z
 zero
+samsung
+oneplus
+amazon
+6T
+7pro
+galaxy
+twitter
