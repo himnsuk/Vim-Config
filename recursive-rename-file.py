@@ -17,7 +17,7 @@ def rename_files(directory, replacing_text):
 			else:
 				continue
 
-dir_path = r"D:\Course\Deep Learning Course with Flutter & Python - Build 6 AI Apps\Course content"
+dir_path = r"D:\Course\Course content"
 replacing_text = "---xyz ---"
 rename_files(dir_path, replacing_text)
 
