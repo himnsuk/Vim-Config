@@ -1,0 +1,5 @@
+import requests
+url = "https://raw.githubusercontent.com/himnsuk/Vim-Config/master/package.txt"
+pack_list = requests.get(url).content.decode("UTF-8").split("\n")
+for pack in pack_list:
+    exec(pack)
